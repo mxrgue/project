@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>For Michelle</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #evil-button {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body class="bg-fuchsia-300 flex items-center justify-center">
+    <video autoplay muted loop class="h-screen w-screen z-0" id="myVideo">
+      <source src="nanalan.mov" type="video/mp4" />
+    </video>
+
+    <div
+      class="bg-gradient-to-br from-pink-500 from-10% via-pink-300 via-30% to-blue-300 h-[350px] p-10 w-[400px] flex flex-col justify-center items-center rounded-lg shadow-xl pb-20 shadow-purple-700"
+      id="valentine?"
+    >
+      <p class="text-5xl text-blue-600 font-serif">Michelle</p>
+      <p class="pb-6 text-2xl font-serif">Will You be my valentine?</p>
+      <script
+        src="https://kit.fontawesome.com/4f3ce16e3e.js"
+        crossorigin="anonymous"
+      ></script>
+      <div class="flex justify-around items-center w-[200px]">
+        <button
+          class="flex-1 bg-gradient-to-br mb-28 from-pink-600 to-purple-300 hover:from-green-600 hover:to-blue-300 w-32 h-14 font-bold text-2xl rounded-lg shadow-lg shadow-green-700 mb-22"
+          id="yesButton"
+        >
+          Yes
+        </button>
+        <button
+          class="w-32 flex-1 bg-red-500 rounded-lg shadow-lg shadow-red-500"
+          id="evil-button"
+        >
+          No
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
