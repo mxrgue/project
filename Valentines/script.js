@@ -69,8 +69,8 @@ document.getElementById("yesButton").addEventListener("click", function () {
   var noButton = document.getElementById("evil-button");
   var valentineDiv = document.getElementById("valentine?"); // select the div by its id
   video.style.display = "block";
-  video.play();
   video.muted = false; // play the video unmuted
+  video.play();
   noButton.style.display = "none"; // hides the "No" button
   valentineDiv.style.display = "none"; // hides the div
 });
