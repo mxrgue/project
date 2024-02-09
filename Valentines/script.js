@@ -70,6 +70,7 @@ document.getElementById("yesButton").addEventListener("click", function () {
   var valentineDiv = document.getElementById("valentine?"); // select the div by its id
   video.style.display = "block";
   video.play();
+  video.muted = false; // play the video unmuted
   noButton.style.display = "none"; // hides the "No" button
   valentineDiv.style.display = "none"; // hides the div
 });
