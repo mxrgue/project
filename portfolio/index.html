@@ -1,176 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= device width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="hero">
-        <nav>
-            <h2 class="logo">Portfolio</span></h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#links">Links</a></li>
-        </ul>
-        </nav>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans text-gray-800 w-screen h-screen">
+    <div class="flex items-center justify-center">
+      <div
+        class="fixed top-4 w-full md:w-3/4 xl:w-2/3 flex flex-col md:flex-row justify-around py-3 px-3 bg-[#27C2CD] bg-opacity-10 backdrop-blur-md rounded-full border border-white border-opacity-20 z-100 shadow-lg shadow-[#989797]"
+        id="navbar"
+      >
+        <div class="w-full flex items-center justify-around">
+          <div class="flex items-start">
+            <p
+              class="text-3xl bg-gradient-to-r from-white from-30% via-[#27C2CD] via-50% to-[#27C2CD] to-90% inline-block text-transparent bg-clip-text px-2"
+            >
+              ROYNE
+              <span
+                class="bg-[#27C2CD] inline-block text-transparent bg-clip-text"
+              >
+                THUO</span
+              >
+            </p>
+          </div>
+          <div class="flex gap-4">
+            <div
+              class="group relative inline-block px-4 py-2 font-medium text-white cursor-pointer"
+            >
+              <a href="#section1" class="text-slate-50 no-underline text-lg"
+                >Home</a
+              >
+              <span
+                class="absolute left-0 top-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute right-0 top-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-100 group-hover:h-full"
+              ></span>
+              <span
+                class="absolute right-0 bottom-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 delay-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute left-0 bottom-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-300 group-hover:h-full"
+              ></span>
+            </div>
+            <div
+              class="group relative inline-block px-4 py-2 font-medium text-white cursor-pointer"
+            >
+              <a href="#section2" class="text-slate-50 no-underline text-lg"
+                >About</a
+              >
+              <span
+                class="absolute left-0 top-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute right-0 top-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-100 group-hover:h-full"
+              ></span>
+              <span
+                class="absolute right-0 bottom-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 delay-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute left-0 bottom-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-300 group-hover:h-full"
+              ></span>
+            </div>
+            <div
+              class="group relative inline-block px-4 py-2 font-medium text-white cursor-pointer"
+            >
+              <a href="#section3" class="text-slate-50 no-underline text-lg"
+                >Stack</a
+              >
+              <span
+                class="absolute left-0 top-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute right-0 top-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-100 group-hover:h-full"
+              ></span>
+              <span
+                class="absolute right-0 bottom-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 delay-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute left-0 bottom-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-300 group-hover:h-full"
+              ></span>
+            </div>
+            <div
+              class="group relative inline-block px-4 py-2 font-medium text-white cursor-pointer"
+            >
+              <a href="#section4" class="text-slate-50 no-underline text-lg"
+                >Contact</a
+              >
+              <span
+                class="absolute left-0 top-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute right-0 top-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-100 group-hover:h-full"
+              ></span>
+              <span
+                class="absolute right-0 bottom-0 h-0.5 w-0 bg-[#27C2CD] transition-all duration-200 delay-200 group-hover:w-full"
+              ></span>
+              <span
+                class="absolute left-0 bottom-0 h-0 w-0.5 bg-[#27C2CD] transition-all duration-200 delay-300 group-hover:h-full"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<div id="home" class="container">
-    <section class="one">
-        <video autoplay muted loop id="myVideo">
-            <source src="video1.mp4" type="video/mp4">
-          </video><br><br>
 
-    </section>
-    
-    <section class="two">
-        <section class="about">
-            <div id="about" class="main">
-                <div class="about-text"><br><br>
-                   <h2>About Me</h2>
-                    <h5>Developer <span>& Designer</span></h5>
-                    <div class="card3">
-                    <p>I am a front-end web developer with a passion for making clean and concise web pages.<br> <br>I pride myself on my ability to communicate effectively with clients to deliver high quality,professional websites that meet their specific needs and goals.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div id="bg-image"></div>
-        <!-- <video autoplay muted loop id="myVideo">
-            <source src="video2.mp4" type="video/mp4">
-          </video> 
-    -->
-      
-    
-    </section>
+    <div id="section1" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+      <canvas id="canvas3d"></canvas>
 
+      <!-- Import maps polyfill -->
+      <!-- Remove this when import maps will be widely supported -->
+      <!-- <script
+        class="w-screen h-screen"
+        async
+        src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+      ></script>
+      <script type="importmap">
+        {
+          "imports": {
+            "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.66/build/runtime.js"
+          }
+        }
+      </script>
+      <script type="module" src="./src/main.js"></script> -->
+    </div>
 
-    <section class="three">
- 
-	<div id="services" class="services">
-		<div class="title">
-			<h2>My Services</h2>
-		</div>
-        <div id="bg-image"></div>
-        <!-- <video autoplay muted loop id="myVideo">
-            <source src="video3.mp4" type="video/mp4">
-          </video>
-           -->
+    <div id="section2" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+      <h2 class="text-3xl p-4 font-semibold mt-28 mx-10 text-[#27C2CD]">
+        About
+      </h2>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h2>Web Development</h2> <br><br>
-				<div class="pra">
-					<p>Guarranteed customer satisfaction in attaining visually appealing and user friendly websites with up to date practices in web development.</p><br><br>
+      <div
+        id="About"
+        class="flex items-center justify-center flex-col h-1/3 mt-10 w-auto mx-10"
+      >
+        <div
+          class="w-full px-5 flex justify-around flex-col py-2 bg-[#27C2CD] bg-opacity-10 backdrop-blur-md rounded-lg border border-white border-opacity-20"
+        >
+          <p class="text-white text-3xl mb-5">
+            Developer
+            <span
+              class="bg-gradient-to-r from-white to-[#27C2CD] inline-block text-transparent bg-clip-text"
+              >& </span
+            ><span class="text-[#27C2CD]"> Designer</span>
+          </p>
+          <p class="text-2xl pb-5 text-white">
+            I am a front-end web developer with a passion for making clean and
+            concise web pages.
+          </p>
+          <p class="text-2xl text-white">
+            I pride myself on my ability to communicate effectively with clients
+            to deliver high quality, professional websites that meet their
+            specific needs and goals.
+          </p>
+        </div>
+      </div>
+    </div>
 
-					<p style="text-align: center;">
-						<a class="btn" href="mailto:royne.thuo@strathmore.edu">Enquire</a>
-					</p>
-				</div>
-			</div>
+    <div id="section3" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+      <h2 class="text-3xl p-4 font-semibold mt-28 mx-10 text-[#27C2CD]">
+        Stack
+      </h2>
+      <div
+        id="Stack"
+        class="pt-10 pb-4 flex space-x-16 items-center justify-center overflow-x-auto animate-loop-scroll"
+      >
+        <i class="fa-brands text-7xl max-w-none text-white fa-python"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-html5"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-node-js"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-css3-alt"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-js"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-react"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-php"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-figma"></i>
+        <i class="fa-brands text-7xl max-w-none text-white fa-webflow"></i>
+      </div>
+      <div class="flex space-x-16 animate-loop-scroll"> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11e1bd92-48b8-41d6-92d9-1fffddd7058f?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image1" />
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54479737-9ad3-4209-83d9-acec2e02887e?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image7" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf51ba0d-367f-49c6-9198-9acbd527e6d1?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image5" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11e1bd92-48b8-41d6-92d9-1fffddd7058f?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image1" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54479737-9ad3-4209-83d9-acec2e02887e?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image7" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf51ba0d-367f-49c6-9198-9acbd527e6d1?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image5" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951101-fab3-48c4-85b8-64d215030869?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image3" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f78620d-f690-4b77-8a6b-89a7f1b279dc?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image4" />       
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54479737-9ad3-4209-83d9-acec2e02887e?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image7" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f78620d-f690-4b77-8a6b-89a7f1b279dc?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image4" /> 
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/313a907-bf32-4dc8-80ac-be6d4d263878?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image9" />
+    </div>
 
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h2>Photograph manipulation</h2> <br><br>
-				<div class="pra">
-					<p>Everything from touchups, light correcting,photoshop to template and flier creation</p><br><br>
+    <div id="section4" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+      <h2 class="text-3xl p-4 font-semibold mt-28 mx-10 text-[#27C2CD]">
+        Contact
+      </h2>
+      <div
+        id="Contact"
+        class="p-4 my-8 mt-10 bg-[#27C2CD] bg-opacity-10 backdrop-blur-md rounded-lg border border-white border-opacity-20"
+      >
+        <div class="grid gap-4 grid-cols-2 lg:grid-cols-4">
+          <a
+            href="#"
+            class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-[#05deee] translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            ></div>
+            <i class="fa-brands fa-github"></i>
+            <h3
+              class="font-medium text-lg text-gray-900 group-hover:text-white relative z-10 duration-300"
+            >
+              Github
+            </h3>
+            <i
+              class="fa-brands fa-github group-hover:text-white bg-gradient-to-br from-gray-400 from-10% via-gray-500 via-80% inline-block text-transparent bg-clip-text absolute text-8xl -top-4 -right-8"
+            ></i>
+            <p
+              class="text-gray-400 group-hover:text-purple-200 relative z-10 duration-300"
+            >
+              Manage profile
+            </p>
+          </a>
+          <a
+            href="#"
+            class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-[#05deee] translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            ></div>
+            <i
+              class="fa-regular fa-envelope group-hover:text-white bg-gradient-to-br from-gray-400 from-10% via-[#27C2CD] via-80% inline-block text-transparent bg-clip-text absolute text-8xl -top-4 -right-5"
+            ></i>
+            <i class="fa-regular fa-envelope text-[#27C2CD]"></i>
+            <h3
+              class="font-medium text-lg text-gray-900 group-hover:text-white relative z-10 duration-300"
+            >
+              Email
+            </h3>
 
-					<p style="text-align: center;">
-						<a class="btn" href="mailto:royne.thuo@strathmore.edu">Enquire</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h2>Video Editing</h2> <br><br>
-				<div class="pra">
-					<p>Video color correction, full on video clipping, edit stunning video content that will suit and capticate your intended audience </p><br><br>
-
-					<p style="text-align: center;">
-						<a class="btn" href="mailto:royne.thuo@strathmore.edu">Enquire</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-    </section>
-
-
-    <section class="four">
-        <!-- <video autoplay muted loop id="myVideo">
-            <source src="video4.mp4" type="video/mp4">
-          </video> -->
-          <footer>
-            <p>Royne Thuo</p>
-            <p>My links below:</p>
-            <div id="links" class="social">
-                <a href="tel:+254727369422"><i class='fas fa-phone' style='font-size:24px'></i></i></a>
-                <a href="mailto:royne.thuo@strathmore.edu"><i class="material-icons">email</i></a>
-            </div>
-            <p class="end">CopyRight Royne Thuo</p>
-        </footer>
-        
-
-    </section>
-
-<!-- 
-    <section class="five">
-        <h4>Fifth page</h14>
-            <div class="box">
-                <div class="card">
-                    <i class="fas fa-bars"></i>
-                    <h5>Web Development</h5>
-                    <div class="pra">
-                        <p>Guarranteed customer satisfaction in attaining visually appealing and user friendly websites with up to date practices in web development.</p>
-    
-                        <p style="text-align: center;">
-                            <a class="button" href="mailto:royne.thuo@strathmore.edu">Enquire</a>
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <i class="far fa-user"></i>
-                    <h5>Photograph manipulation</h5>
-                    <div class="pra">
-                        <p>Everything from touchups, light correcting,photoshop to template and flier creation</p>
-    
-                        <p style="text-align: center;">
-                            <a class="button" href="mailto:royne.thuo@strathmore.edu">Enquire</a>
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <i class="far fa-bell"></i>
-                    <h5>Video Editing</h5>
-                    <div class="pra">
-                        <p>Video color correction, full on video clipping, edit stunning video content that will suit and capticate your intended audience </p>
-    
-                        <p style="text-align: center;">
-                            <a class="button" href="mailto:royne.thuo@strathmore.edu">Enquire</a>
-                        </p>
-                    </div>
-            
-           
-                <video autoplay muted loop id="myVideo">
-                    <source src="video4.mp4" type="video/mp4">
-                  </video>
-                
-    
-    </section> -->
-
-
-</div>
-</body>
+            <p
+              class="text-gray-400 group-hover:text-purple-200 relative z-10 duration-300"
+            >
+              Manage profile
+            </p>
+          </a>
+          <a
+            href="#"
+            class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-[#05deee] translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            ></div>
+            <i class="fa-brands fa-linkedin text-[#007ebb]"></i>
+            <h3
+              class="font-medium text-lg text-gray-900 group-hover:text-white relative z-10 duration-300"
+            >
+              LinkedIn
+            </h3>
+            <i
+              class="fa-brands fa-linkedin group-hover:text-white bg-gradient-to-br from-gray-400 from-10% via-[#007ebb] via-80% inline-block text-transparent bg-clip-text absolute text-8xl -top-4 -right-4"
+            ></i>
+            <p
+              class="text-gray-400 group-hover:text-purple-200 relative z-10 duration-300"
+            >
+              Manage profile
+            </p>
+          </a>
+          <a
+            href="#"
+            class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-[#05deee] translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+            ></div>
+            <i class="fa-brands fa-discord text-[#5865f2]"></i>
+            <h3
+              class="font-medium text-lg text-gray-900 group-hover:text-white relative z-10 duration-300"
+            >
+              Discord
+            </h3>
+            <i
+              class="fa-brands fa-discord group-hover:text-white bg-gradient-to-br from-gray-400 from-10% via-[#5865f2] via-80% inline-block text-transparent bg-clip-text absolute text-8xl -top-4 -right-8"
+            ></i>
+            <p
+              class="text-gray-400 group-hover:text-purple-200 relative z-10 duration-300"
+            >
+              Manage profile
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class=""></div>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
