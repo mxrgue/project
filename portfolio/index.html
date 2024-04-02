@@ -112,10 +112,11 @@
       </div>
     </div>
 
-    <div id="section1" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+    <div id="section1" class="section py-0 h-screen w-screen bg-[#7F7F7F]">
       <canvas id="canvas3d"></canvas>
 
       <!-- Import maps polyfill -->
+      <!-- Remove this when import maps will be widely supported -->
       <script
         class="w-screen h-screen"
         async
@@ -131,7 +132,10 @@
       <script type="module" src="./src/main.js"></script>
     </div>
 
-    <div id="section2" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+    <div
+      id="section2"
+      class="section py-12 h-screen w-screen bg-[url('img2.png')] bg-cover bg-center"
+    >
       <h2 class="text-3xl p-4 font-semibold mt-28 mx-10 text-[#27C2CD]">
         About
       </h2>
@@ -163,13 +167,16 @@
       </div>
     </div>
 
-    <div id="section3" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+    <div
+      id="section3"
+      class="section py-12 h-screen w-screen bg-[#7F7F7F] bg-[url('img3.jpg')] bg-cover bg-center"
+    >
       <h2 class="text-3xl p-4 font-semibold mt-28 mx-10 text-[#27C2CD]">
         Stack
       </h2>
       <div
         id="Stack"
-        class="pt-10 pb-4 flex space-x-16 items-center justify-center overflow-x-auto animate-loop-scroll"
+        class="pt-64 pb-4 flex space-x-16 items-center justify-center overflow-x-auto animate-loop-scroll scrollbar-hide overflow-hidden"
       >
         <i class="fa-brands text-7xl max-w-none text-white fa-python"></i>
         <i class="fa-brands text-7xl max-w-none text-white fa-html5"></i>
@@ -180,23 +187,13 @@
         <i class="fa-brands text-7xl max-w-none text-white fa-php"></i>
         <i class="fa-brands text-7xl max-w-none text-white fa-figma"></i>
         <i class="fa-brands text-7xl max-w-none text-white fa-webflow"></i>
-   </div>
-      <!--    
-      <div class="flex space-x-16 animate-loop-scroll"> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11e1bd92-48b8-41d6-92d9-1fffddd7058f?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image1" />
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54479737-9ad3-4209-83d9-acec2e02887e?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image7" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf51ba0d-367f-49c6-9198-9acbd527e6d1?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image5" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11e1bd92-48b8-41d6-92d9-1fffddd7058f?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image1" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54479737-9ad3-4209-83d9-acec2e02887e?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image7" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf51ba0d-367f-49c6-9198-9acbd527e6d1?apiKey=YJIGb4i01jvw0SRdL5Bt&" class="max-w-none" alt="Image5" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951101-fab3-48c4-85b8-64d215030869?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image3" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f78620d-f690-4b77-8a6b-89a7f1b279dc?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image4" />       
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54479737-9ad3-4209-83d9-acec2e02887e?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image7" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f78620d-f690-4b77-8a6b-89a7f1b279dc?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image4" /> 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/313a907-bf32-4dc8-80ac-be6d4d263878?apiKey=YJIGb401jvw0SRdL5Bt&" class="max-w-none" alt="Image9" />
-    </div> -->
+      </div>
+    </div>
 
-    <div id="section4" class="section py-12 h-screen w-screen bg-[#7F7F7F]">
+    <div
+      id="section4"
+      class="section py-12 h-screen w-screen bg-[#7F7F7F] bg-[url('img2.png')] bg-cover bg-center"
+    >
       <h2 class="text-3xl p-4 font-semibold mt-28 mx-10 text-[#27C2CD]">
         Contact
       </h2>
@@ -206,7 +203,7 @@
       >
         <div class="grid gap-4 grid-cols-2 lg:grid-cols-4">
           <a
-            href="#"
+            href="https://github.com/RoyneThu0"
             class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
           >
             <div
@@ -224,11 +221,11 @@
             <p
               class="text-gray-400 group-hover:text-purple-200 relative z-10 duration-300"
             >
-              Manage profile
+              My github profile
             </p>
           </a>
           <a
-            href="#"
+            href="mailto:roynethuo@gmail.com"
             class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
           >
             <div
@@ -251,7 +248,7 @@
             </p>
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/royne-thuo-0b9b4225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
           >
             <div
@@ -273,7 +270,7 @@
             </p>
           </a>
           <a
-            href="#"
+            href="discordapp.com/users/907513035676082197"
             class="w-full p-10 rounded border border-gray-300 relative overflow-hidden group bg-[#cfcece]"
           >
             <div
@@ -295,6 +292,15 @@
             </p>
           </a>
         </div>
+      </div>
+      <div class="w-screen h-16 mt-20 flex items-center justify-center">
+        <a
+          download="Royne_Thuo_Resumé.pdf"
+          href=""
+          class="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-indigo-900 mt-3 px-4 py-4 rounded-lg tracking-wide text-white"
+        >
+          <span class="ml-2">Download CV</span>
+        </a>
       </div>
     </div>
     <div class=""></div>
